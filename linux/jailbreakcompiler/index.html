@@ -53,8 +53,7 @@
                 const reader = new FileReader();
                 reader.onload = function(e) {
                     const logoURL = e.target.result;
-                    const xml = `
-<amlJailbreakCompiler>
+                    const xml = `<amlJailbreakCompiler>
   <jailname>${jailbreakName}</jailname>
   <logoURL>${logoURL}</logoURL>
   <juxURL>${juxUrl}</juxURL>
@@ -64,8 +63,7 @@
                 };
                 reader.readAsDataURL(jailbreakImage);
             } else {
-                const xml = `
-<amlJailbreakCompiler>
+                const xml = `<amlJailbreakCompiler>
   <jailname>${jailbreakName}</jailname>
   <logoURL></logoURL>
   <juxURL>${juxUrl}</juxURL>
