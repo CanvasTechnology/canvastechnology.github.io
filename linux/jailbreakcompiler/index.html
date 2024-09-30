@@ -44,8 +44,35 @@
 
     <script>
         function generateXML() {
-            // Placeholder function for generating XML
-            document.getElementById('xmlOutput').innerHTML = '<pre><xml>...</xml></pre>';
+            const jailbreakName = document.getElementById('jailbreakName').value;
+            const juxUrl = document.getElementById('juxUrl').value;
+            const kernelVersion = document.getElementById('kernelVersion').value;
+            const jailbreakImage = document.getElementById('jailbreakImage').files[0];
+
+            if (jailbreakImage) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const logoURL = e.target.result;
+                    const xml = `
+<amlJailbreakCompiler>
+  <jailname>${jailbreakName}</jailname>
+  <logoURL>${logoURL}</logoURL>
+  <juxURL>${juxUrl}</juxURL>
+  <linuxVER>${kernelVersion}</linuxVER>
+</amlJailbreakCompiler>`;
+                    document.getElementById('xmlOutput').innerHTML = '<pre>' + xml + '</pre>';
+                };
+                reader.readAsDataURL(jailbreakImage);
+            } else {
+                const xml = `
+<amlJailbreakCompiler>
+  <jailname>${jailbreakName}</jailname>
+  <logoURL></logoURL>
+  <juxURL>${juxUrl}</juxURL>
+  <linuxVER>${kernelVersion}</linuxVER>
+</amlJailbreakCompiler>`;
+                document.getElementById('xmlOutput').innerHTML = '<pre>' + xml + '</pre>';
+            }
         }
     </script>
 </body>
