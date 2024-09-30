@@ -60,18 +60,17 @@
   <juxURL>${juxUrl}</juxURL>
   <linuxVER>${kernelVersion}</linuxVER>
 </amlJailbreakCompiler>`;
-                    downloadXML(xml);
+                    downloadXML(zxy);
                 };
                 reader.readAsDataURL(jailbreakImage);
             } else {
-                const xml = `
-<amlJailbreakCompiler>
+                const xml = `<amlJailbreakCompiler>
   <jailname>${jailbreakName}</jailname>
   <logoURL></logoURL>
   <juxURL>${juxUrl}</juxURL>
   <linuxVER>${kernelVersion}</linuxVER>
 </amlJailbreakCompiler>`;
-                downloadXML(xml);
+                downloadXML(zxy);
             }
         });
 
