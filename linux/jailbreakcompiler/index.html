@@ -35,7 +35,7 @@
             </div>
             <div class="form-group row">
                 <div class="col-sm-12 text-center">
-                    <button type="button" class="btn btn-primary" onclick="generateXML()">Generate</button>
+                    <button type="button" class="btn btn-primary" id="generate">Generate</button>
                 </div>
             </div>
         </form>
@@ -43,7 +43,7 @@
     </div>
 
     <script>
-        function generateXML() {
+        document.getElementById('generate').addEventListener('click', function() {
             const jailbreakName = document.getElementById('jailbreakName').value;
             const juxUrl = document.getElementById('juxUrl').value;
             const kernelVersion = document.getElementById('kernelVersion').value;
@@ -60,7 +60,7 @@
   <juxURL>${juxUrl}</juxURL>
   <linuxVER>${kernelVersion}</linuxVER>
 </amlJailbreakCompiler>`;
-                    document.getElementById('xmlOutput').innerHTML = '<pre>' + xml + '</pre>';
+                    downloadXML(xml);
                 };
                 reader.readAsDataURL(jailbreakImage);
             } else {
@@ -71,8 +71,18 @@
   <juxURL>${juxUrl}</juxURL>
   <linuxVER>${kernelVersion}</linuxVER>
 </amlJailbreakCompiler>`;
-                document.getElementById('xmlOutput').innerHTML = '<pre>' + xml + '</pre>';
+                downloadXML(xml);
             }
+        });
+
+        function downloadXML(xml) {
+            const blob = new Blob([xml], { type: 'text/xml' });
+            const link = document.createElement('a');
+            link.download = 'generated_code.xml';
+            link.href = window.URL.createObjectURL(blob);
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
     </script>
 </body>
