@@ -60,24 +60,25 @@
   <juxURL>${juxUrl}</juxURL>
   <linuxVER>${kernelVersion}</linuxVER>
 </amlJailbreakCompiler>`;
-                    downloadXML(zxy);
+                    downloadXML(xml, jailbreakName);
                 };
                 reader.readAsDataURL(jailbreakImage);
             } else {
-                const xml = `<amlJailbreakCompiler>
+                const xml = `
+<amlJailbreakCompiler>
   <jailname>${jailbreakName}</jailname>
   <logoURL></logoURL>
   <juxURL>${juxUrl}</juxURL>
   <linuxVER>${kernelVersion}</linuxVER>
 </amlJailbreakCompiler>`;
-                downloadXML(zxy);
+                downloadXML(xml, jailbreakName);
             }
         });
 
-        function downloadXML(xml) {
+        function downloadXML(xml, jailbreakName) {
             const blob = new Blob([xml], { type: 'text/xml' });
             const link = document.createElement('a');
-            link.download = 'generated_code.xml';
+            link.download = `${jailbreakName}.zxy`;
             link.href = window.URL.createObjectURL(blob);
             document.body.appendChild(link);
             link.click();
