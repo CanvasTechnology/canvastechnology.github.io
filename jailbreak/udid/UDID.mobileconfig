@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+   <key>PayloadContent</key>
+   <array>
+      <dict>
+         <key>PayloadContent</key>
+         <dict>
+            <key>URL</key>
+            <string>https://canvastechnology.github.io/jailbreak/udid/get-udid.php</string> <!-- Server URL -->
+            <key>DeviceAttributes</key>
+            <array>
+               <string>UDID</string>
+               <string>IMEI</string>
+               <string>ICCID</string>
+               <string>VERSION</string>
+               <string>PRODUCT</string>
+            </array>
+         </dict>
+         <key>PayloadDescription</key>
+         <string>Helpful to sign apps inside the jailbreak..</string>
+         <key>PayloadDisplayName</key>
+         <string>JailbreakUDID</string>
+         <key>PayloadIdentifier</key>
+         <string>com.canvas.udidjailbreak</string>
+         <key>PayloadType</key>
+         <string>Profile Service</string>
+         <key>PayloadUUID</key>
+         <string>d26c420d-7146-438d-87ce-ea5cf208bb5a</string>
+         <key>PayloadVersion</key>
+         <integer>1</integer>
+      </dict>
+   </array>
+   <key>PayloadDisplayName</key>
+   <string>Get UDID Profile</string>
+   <key>PayloadIdentifier</key>
+   <string>com.canvas.udidjailbreak.profile</string>
+   <key>PayloadUUID</key>
+   <string>d26c420d-7146-438d-87ce-ea5cf208bb5a</string>
+   <key>PayloadVersion</key>
+   <integer>1</integer>
+</dict>
+</plist>
