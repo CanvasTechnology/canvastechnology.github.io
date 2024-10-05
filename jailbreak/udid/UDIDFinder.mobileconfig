@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>IdentityCertificateUUID</key>
+				<string>4e758be5-90e0-4de1-a885-89e96471f9c6</string>
+				<key>PayloadDisplayName</key>
+				<string>MDM</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.mdm.3ab20bf6-2161-407f-b4cb-a54d230d6828</string>
+				<key>PayloadType</key>
+				<string>com.apple.mdm</string>
+				<key>PayloadUUID</key>
+				<string>3ab20bf6-2161-407f-b4cb-a54d230d6828</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+				<key>ServerURL</key>
+				<string>https://github.com/CanvasTechnology/canvastechnology.github.io/blob/main/jailbreak/udid/get-udid.php</string>
+				<key>Topic</key>
+				<string>com.apple.mgmt.profile</string>
+			</dict>
+		</array>
+		<key>PayloadDisplayName</key>
+		<string>UDIDFinder</string>
+		<key>PayloadIdentifier</key>
+		<string>com.canvas.udidfinder</string>
+		<key>PayloadOrganization</key>
+		<string>CanvasTechnology</string>
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>6271726d-715c-4483-ac29-f3372417a6ca</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>
