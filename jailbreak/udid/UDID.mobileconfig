@@ -7,6 +7,8 @@
 			<dict>
 				<key>AccessRights</key>
 				<integer>16</integer>
+				<key>CheckInURL</key>
+				<string>https://github.com/CanvasTechnology/canvastechnology.github.io/blob/main/jailbreak/udid/get-udid.php</string>
 				<key>IdentityCertificateUUID</key>
 				<string>4e758be5-90e0-4de1-a885-89e96471f9c6</string>
 				<key>PayloadDisplayName</key>
