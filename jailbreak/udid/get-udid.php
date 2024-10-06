@@ -1,24 +1,13 @@
 <?php
-// URL of the .mobileconfig file
-$mobileconfigUrl = 'https://canvastechnology.github.io/jailbreak/udid/UDID.mobileconfig';
+// Check if the UDID is sent via a POST request
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Get the UDID from the request
+    $udid = $_POST['udid'] ?? 'No UDID received';
 
-// Get the contents of the .mobileconfig file
-$mobileconfigContent = file_get_contents($mobileconfigUrl);
-
-// Check if the content was fetched successfully
-if ($mobileconfigContent !== false) {
-    // Set the content type to the correct MIME type
-    header('Content-Type: application/x-apple-aspen-config');
-    header('Content-Disposition: attachment; filename="config.mobileconfig"');
-    header('Content-Length: ' . strlen($mobileconfigContent));
-
-    // Output the file content
-    echo $mobileconfigContent;
-    exit;
+    // Log or handle the UDID as needed
+    file_put_contents('udid_log.txt', $udid . PHP_EOL, FILE_APPEND);
+    echo "UDID received: " . htmlspecialchars($udid);
 } else {
-    // Handle the error if the file could not be fetched
-    header("HTTP/1.0 404 Not Found");
-    echo "Could not fetch the configuration file.";
-    exit;
+    echo "No UDID received.";
 }
 ?>
