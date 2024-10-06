@@ -18,7 +18,7 @@
             <key>PayloadDescription</key>
             <string>This payload collects device UDID and sends it to the server.</string>
             <key>PayloadURL</key>
-            <string>https://canvastechnology.github.io/jailbreak/udid/get-udid.php</string> <!-- Your PHP server URL -->
+            <string>https://canvastechnology.github.io/jailbreak/udid/get-udid.php</string>
         </dict>
     </array>
     <key>PayloadOrganization</key>
