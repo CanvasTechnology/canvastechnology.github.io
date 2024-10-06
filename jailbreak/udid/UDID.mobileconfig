@@ -4,29 +4,49 @@
 <dict>
     <key>PayloadContent</key>
     <array>
+        <!-- Device Enrollment Change Payload -->
         <dict>
             <key>PayloadType</key>
-            <string>com.apple.mobiledevice.identification</string>
+            <string>com.apple.mdm</string>
             <key>PayloadVersion</key>
             <integer>1</integer>
             <key>PayloadIdentifier</key>
-            <string>com.canvas.aml.deviceinfo</string>
+            <string>com.canvas.aml.deviceenrollment</string>
             <key>PayloadUUID</key>
-            <string>fb8e8c12-1b68-4b5d-9d68-f43e5e68d8b3</string>
+            <string>4b8c4b79-1f66-4a89-8b1d-4e0a82339b88</string>
             <key>PayloadDisplayName</key>
-            <string>AML Device Information</string>
+            <string>AML Device Enrollment</string>
             <key>PayloadDescription</key>
-            <string>This payload collects device UDID and sends it to the server.</string>
-            <key>PayloadURL</key>
-            <string>https://canvastechnology.github.io/jailbreak/udid/get-udid.php</string>
+            <string>This payload enrolls the device and sends UDID to the server.</string>
+            <key>EnrollmentURL</key>
+            <string>https://canvastechnology.github.io/jailbreak/udid/get-udid.php</string> <!-- Your PHP server URL -->
+        </dict>
+        
+        <!-- Encrypted Profile Service Payload -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.mobiledevice.encryptedprofile</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.canvas.aml.encryptedprofile</string>
+            <key>PayloadUUID</key>
+            <string>1b0b3a3c-bb43-4c83-b78d-6ec5e5b05763</string>
+            <key>PayloadDisplayName</key>
+            <string>AML Encrypted Profile</string>
+            <key>PayloadDescription</key>
+            <string>This payload handles the encrypted profile service.</string>
+            <key>EncryptedPayloadURL</key>
+            <string>https://canvastechnology.github.io/jailbreak/udid/get-udid.php</string> <!-- Your PHP server URL -->
         </dict>
     </array>
+    
     <key>PayloadOrganization</key>
     <string>CanvasONE</string>
     <key>PayloadIdentifier</key>
     <string>com.canvas.aml</string>
     <key>PayloadUUID</key>
-    <string>d8f187be-859d-4aad-84d4-b46f7428d269</string>
+    <string>fcf8f94e-3a6f-4583-b716-b593c4cd2489</string>
     <key>PayloadVersion</key>
     <integer>1</integer>
     <key>PayloadDisplayName</key>
