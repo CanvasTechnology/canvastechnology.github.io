@@ -28,7 +28,7 @@
     <key>PayloadIdentifier</key>
     <string>com.canvas.aml.profile</string>
     <key>PayloadUUID</key>
-    <string>de2f1b11-1b95-43b1-b8d8-4c967645fda4</string> <!-- Use a new unique UUID here -->
+    <string>de2f1b11-1b95-43b1-b8d8-4c967645fda4</string> <!-- Ensure this is a unique UUID -->
     <key>DisplayName</key>
     <string>AML Device Information Finder</string>
     <key>OrganizationName</key>
