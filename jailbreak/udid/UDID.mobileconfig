@@ -1,43 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-	<dict>
-		<key>PayloadContent</key>
-		<array>
-			<dict>
-				<key>AccessRights</key>
-				<integer>16</integer>
-				<key>CheckInURL</key>
-				<string>https://github.com/CanvasTechnology/canvastechnology.github.io/blob/main/jailbreak/udid/get-udid.php</string>
-				<key>IdentityCertificateUUID</key>
-				<string>4e758be5-90e0-4de1-a885-89e96471f9c6</string>
-				<key>PayloadDisplayName</key>
-				<string>MDM</string>
-				<key>PayloadIdentifier</key>
-				<string>com.apple.mdm.3ab20bf6-2161-407f-b4cb-a54d230d6828</string>
-				<key>PayloadType</key>
-				<string>com.apple.mdm</string>
-				<key>PayloadUUID</key>
-				<string>3ab20bf6-2161-407f-b4cb-a54d230d6828</string>
-				<key>PayloadVersion</key>
-				<integer>1</integer>
-				<key>ServerURL</key>
-				<string>https://github.com/CanvasTechnology/canvastechnology.github.io/blob/main/jailbreak/udid/get-udid.php</string>
-				<key>Topic</key>
-				<string>com.apple.mgmt.profile</string>
-			</dict>
-		</array>
-		<key>PayloadDisplayName</key>
-		<string>UDIDFinder</string>
-		<key>PayloadIdentifier</key>
-		<string>com.canvas.udidfinder</string>
-		<key>PayloadOrganization</key>
-		<string>CanvasTechnology</string>
-		<key>PayloadType</key>
-		<string>Configuration</string>
-		<key>PayloadUUID</key>
-		<string>6271726d-715c-4483-ac29-f3372417a6ca</string>
-		<key>PayloadVersion</key>
-		<integer>1</integer>
-	</dict>
+  <dict>
+    <key>PayloadContent</key>
+    <array>
+      <dict>
+        <key>PayloadType</key>
+        <string>com.apple.security.root</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadIdentifier</key>
+        <string>com.canvas.aml</string>
+        <key>PayloadUUID</key>
+        <string>d8f187be-859d-4aad-84d4-b46f7428d269</string>
+        <key>PayloadDescription</key>
+        <string>This profile sends UDID to a server</string>
+        <key>PayloadDisplayName</key>
+        <string>AML Device Information Finder</string>
+        <key>PayloadURL</key>
+        <string>https://yourwebsite.com/capture_udid.php</string> <!-- Add your server URL here -->
+      </dict>
+    </array>
+    <key>PayloadOrganization</key>
+    <string>CanvasONE</string>
+    <key>PayloadIdentifier</key>
+    <string>com.canvas.aml</string>
+    <key>PayloadUUID</key>
+    <string>d8f187be-859d-4aad-84d4-b46f7428d269</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+  </dict>
 </plist>
