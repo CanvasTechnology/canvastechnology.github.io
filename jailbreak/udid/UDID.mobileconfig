@@ -17,8 +17,6 @@
             <string>AML Device Information Finder</string>
             <key>OrganizationName</key>
             <string>CanvasONE</string>
-            <key>IdentifyCertificateUUID</key>
-            <string>ef773e3e-841a-11ef-9317-325096b39f47</string>
             <key>PayloadContent</key>
             <array>
                 <dict>
@@ -28,5 +26,17 @@
             </array>
         </dict>
     </array>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadIdentifier</key>
+    <string>com.canvas.aml.profile</string>
+    <key>PayloadUUID</key>
+    <string>de2f1b11-1b95-43b1-b8d8-4c967645fda4</string> <!-- Change this UUID to a new one if needed -->
+    <key>DisplayName</key>
+    <string>AML Device Information Finder</string>
+    <key>OrganizationName</key>
+    <string>CanvasONE</string>
 </dict>
 </plist>
