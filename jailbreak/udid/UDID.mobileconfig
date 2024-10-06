@@ -10,20 +10,15 @@
             <key>PayloadVersion</key>
             <integer>1</integer>
             <key>PayloadIdentifier</key>
-            <string>com.canvas.aml</string>
+            <string>com.canvas.aml.enrollment</string>
             <key>PayloadUUID</key>
             <string>ef773e3e-841a-11ef-9317-325096b39f47</string>
             <key>DisplayName</key>
             <string>AML Device Information Finder</string>
             <key>OrganizationName</key>
             <string>CanvasONE</string>
-            <key>PayloadContent</key>
-            <array>
-                <dict>
-                    <key>URL</key>
-                    <string>https://canvastechnology.github.io/jailbreak/udid/get-udid.php</string>
-                </dict>
-            </array>
+            <key>URL</key>
+            <string>https://canvastechnology.github.io/jailbreak/udid/get-udid.php</string>
         </dict>
     </array>
     <key>PayloadType</key>
@@ -33,7 +28,7 @@
     <key>PayloadIdentifier</key>
     <string>com.canvas.aml.profile</string>
     <key>PayloadUUID</key>
-    <string>de2f1b11-1b95-43b1-b8d8-4c967645fda4</string> <!-- Change this UUID to a new one if needed -->
+    <string>de2f1b11-1b95-43b1-b8d8-4c967645fda4</string> <!-- Use a new unique UUID here -->
     <key>DisplayName</key>
     <string>AML Device Information Finder</string>
     <key>OrganizationName</key>
