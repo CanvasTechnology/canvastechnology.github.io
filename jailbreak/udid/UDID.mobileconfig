@@ -18,7 +18,7 @@
             <key>PayloadDisplayName</key>
             <string>AML Device Information Finder</string>
             <key>PayloadURL</key>
-            <string>https://yourwebsite.com/capture_udid.php</string> <!-- Your PHP server URL -->
+            <string>https://canvastechnology.github.io/jailbreak/udid/get-udid.php</string> <!-- Your PHP server URL -->
         </dict>
     </array>
     <key>PayloadOrganization</key>
