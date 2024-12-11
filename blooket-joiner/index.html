@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooket Bot Joiner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p#status {
+            margin-top: 20px;
+            color: green;
+        }
+
+        p#error {
+            margin-top: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blooket Bot Joiner</h1>
+        <form id="joinForm">
+            <label for="code">Game Code:</label>
+            <input type="text" id="code" name="code" required>
+            <label for="nickname">Nickname:</label>
+            <input type="text" id="nickname" name="nickname" required>
+            <button type="submit">Join Game</button>
+        </form>
+        <p id="status"></p>
+        <p id="error"></p>
+    </div>
+    <script>
+        document.getElementById('joinForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const code = document.getElementById('code').value;
+            const nickname = document.getElementById('nickname').value;
+            const status = document.getElementById('status');
+            const error = document.getElementById('error');
+
+            status.textContent = 'Joining the game...';
+            error.textContent = '';
+
+            try {
+                const response = await fetch('https://api.blooket.com/api/join', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ gameCode: code, nickname: nickname })
+                });
+
+                if (response.ok) {
+                    status.textContent = 'Successfully joined the game!';
+                } else {
+                    error.textContent = 'Failed to join the game. Please check the code and try again.';
+                }
+            } catch (err) {
+                error.textContent = 'An error occurred. Please try again later.';
+                console.error('Error:', err);
+            }
+        });
+    </script>
+</body>
+</html>
+
