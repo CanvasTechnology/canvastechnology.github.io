@@ -87,10 +87,10 @@
             error.textContent = '';
 
             try {
-                const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+                const proxyUrl = 'https://api.allorigins.win/raw?url=';
                 const targetUrl = `https://api.blooket.com/api/join?gameCode=${code}&nickname=${nickname}`;
 
-                const response = await fetch(proxyUrl + targetUrl, {
+                const response = await fetch(proxyUrl + encodeURIComponent(targetUrl), {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
