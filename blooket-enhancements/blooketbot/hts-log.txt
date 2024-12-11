@@ -1,0 +1,23 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 11 Dec 2024 17:07:28 at http://blooketbot.glitch.me +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -WC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://blooketbot.glitch.me -O1 "C:\Users\cji12\Downloads\blooketbot" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+17:07:44	Warning: 	unexpected incomplete type with 200 code at https://fonts.googleapis.com/css?family=Nunito:400,700|Titan+One|Creepster|Satisfy|Eczar:700
+17:07:52	Warning: 	unexpected incomplete type with 200 code at https://www.youtube.com/@crypto.7562
+17:07:54	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 1141): https://fonts.googleapis.com/css?family=Nunito:400,700|Titan+One|Creepster|Satisfy|Eczar:700
+17:07:54	Warning: 	Warning: store text/css without scan: C:/Users/cji12/Downloads/blooketbot/fonts.googleapis.com/css.060ec.delayed
+17:08:23	Error: 	"Unknown error" (522) at link https://bb.doyle31.com/ (from blooketbot.glitch.me/)
+17:08:23	Warning: 	File not parsed, looks like binary: https://www.youtube.com/@crypto.7562
+17:08:24	Warning: 	Moved Permanently for https://discord.gg/blooket
+17:08:24	Warning: 	File has moved from https://discord.gg/blooket to https://discord.com/invite/blooket
+17:08:26	Error: 	Duplicate entry in hts_wait_delayed() cancelled: https://discord.com/invite/blooket -> C:/Users/cji12/Downloads/blooketbot/discord.com/invite/blooket.7.delayed
+17:08:26	Warning: 	link is probably looping, type unknown, aborting: https://discord.com/invite/blooket
+17:08:27	Warning: 	unexpected incomplete type with 200 code at https://discord.com/invite/blooket
+17:08:27	Warning: 	File not parsed, looks like binary: https://discord.com/invite/blooket
+
+HTTrack Website Copier/3.49-2 mirror complete in 59 seconds : 16 links scanned, 6 files written (99888 bytes overall) [315044 bytes received at 5339 bytes/sec], 207581 bytes transferred using HTTP compression in 6 files, ratio 99%, 1.0 requests per connection
+(2 errors, 10 warnings, 0 messages)
