@@ -87,8 +87,10 @@
             error.textContent = '';
 
             try {
-                // This is a mock example, replace with actual implementation if available
-                const response = await fetch(`https://api.blooket.com/api/join?gameCode=${code}&nickname=${nickname}`, {
+                const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+                const targetUrl = `https://api.blooket.com/api/join?gameCode=${code}&nickname=${nickname}`;
+
+                const response = await fetch(proxyUrl + targetUrl, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
